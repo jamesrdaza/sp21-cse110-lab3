@@ -1,0 +1,15 @@
+.top
+{
+    border: 2px solid black;
+    background-color: rgb(140, 140, 204);
+    color: #222222
+}
+
+header{
+    margin-left: 10px;
+}
+
+nav{
+    padding-top: 0.25cm;
+    margin-left: 4pt;
+}
