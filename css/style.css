@@ -1,5 +1,4 @@
-.top
-{
+.top{ /* Header CSS */
     display: inline-block;
     width: 100%;
     border: 2px solid black;
@@ -29,18 +28,18 @@ body{
     background-color: hsl(197, 47%, 86%);
 }
 
-section{
+section{ /* Border for Journal Entries */
     display: block;
     border-style: dashed;
     border-color: black;
-    min-width: 1865px;
+    min-width: 1800px;
     border-width: 2px;
     border-radius: 8px;
     margin: 2px 2px 2px 2px;
     padding: 1px 5px 10px 10px;
 }
 
-h3{
+h3{/* Titles */
     
     text-decoration: underline dotted;
     color:#222222;
@@ -62,6 +61,8 @@ nav a{
     margin-left: 1px;
     background-color: rgb(160, 160, 224);
 }
+
+/* Action Commands for nav bar*/
 a:link {
     text-decoration: none;
   }
@@ -77,7 +78,7 @@ a:visited{
     border: 1px solid grey;
 }
 
-#entry2{
+#entry2, #entry3{
    
     display: inline-block;
     
@@ -93,13 +94,7 @@ ul{
     bottom: 230px;
     left: 530px;
     display: inline-block;
-    
     width:30%
-}
-
-ul li{
-    margin-left: 25px;
-    margin-bottom: 0px;
 }
 
 nav a:hover{
@@ -109,16 +104,42 @@ nav a:active{
     background-color: purple;
 }
 
-.post{
+.post{ /* Header CSS */
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
 .post p{
     width: 30%;
 }
 
-/*  ol{
-    display: flex;
-    background-color: black; 
-    flex-direction: row;
-    justify-content: space-evenly;
-}  */
+*{ /* Changes all the page font*/
+    font-family: 'Roboto', serif;
+}
+
+ol[attribute="routine"]{
+    color: blue;
+}
+
+ol{
+    order: 3;
+}
+
+ul > li{ /* li children of unordered list*/
+    margin-left: 25px;
+    margin-bottom: 0px;
+}
+
+video{
+    order: 2;
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+      background-color: pink;
+    }
+}
+
+
+    
