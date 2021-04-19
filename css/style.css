@@ -1,6 +1,6 @@
 .top{ /* Header CSS */
     display: inline-block;
-    width: 100%;
+    width: 98vw;
     border: 2px solid black;
     background-color: rgb(140, 140, 204);
     margin-right: 0px;
@@ -19,9 +19,6 @@ nav{
     padding-top: 2px;
     padding-left: 1x;
     padding-right: 1px;
-   /*  border-top: 1px solid rgb(0,0,0, 0.5);
-    border-bottom: 1px solid rgb(0,0,0, 0.5); */
-    
 }
 
 body{
@@ -49,7 +46,7 @@ p{
     text-align: left;
 }
 
-nav a{
+nav a{ /* Navbar Elements */
     position: static;
     height: 1.5em;
     display: block;
@@ -62,6 +59,8 @@ nav a{
     background-color: rgb(160, 160, 224);
 }
 
+
+
 /* Action Commands for nav bar*/
 a:link {
     text-decoration: none;
@@ -70,6 +69,8 @@ a:link {
 a:visited{
     text-decoration: none;
 }
+
+
 
 #entry1{
     position: static;
@@ -94,7 +95,8 @@ ul{
     bottom: 230px;
     left: 530px;
     display: inline-block;
-    width:30%
+    width: 30%;
+    margin: auto;
 }
 
 nav a:hover{
@@ -135,15 +137,35 @@ video{
     order: 2;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) { /* If page is small enough it turns pink */
     body {
       background-color: pink;
     }
 }
 
+.content2{
+    display: grid;
+    grid-template-columns: 600px 300px;
+    grid-template-rows: 300px 100px;
+}
 
-<<<<<<< HEAD
+audio ~ ol{
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+a.navEle{
+    color: #6b0966;
+}
+
+p + h3{/* Selects all titles after a date */
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h2 + p{/* Margin for date */
+    margin-top: 30px;
+}
+
+
    
-=======
-   
->>>>>>> 1101f086de9eef3c7b7a28acf61d3c8be9836431
