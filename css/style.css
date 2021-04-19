@@ -77,6 +77,13 @@ a:visited{
     border: 1px solid grey;
 }
 
+#entry2{
+   
+    display: inline-block;
+    
+    border: 1px solid grey;
+}
+
 li{
     font-size: 0.9rem;
 }
@@ -94,3 +101,24 @@ ul li{
     margin-left: 25px;
     margin-bottom: 0px;
 }
+
+nav a:hover{
+    background-color: aqua;
+}
+nav a:active{
+    background-color: purple;
+}
+
+.post{
+    display: flex;
+}
+.post p{
+    width: 30%;
+}
+
+/*  ol{
+    display: flex;
+    background-color: black; 
+    flex-direction: row;
+    justify-content: space-evenly;
+}  */
